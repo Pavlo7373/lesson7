@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>getElementById example</title>
+    <!-- <script src="script.js"></script> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        * {
+            margin: 0;
+            font-family: 'Roboto';
+        }
+        * {
+            padding: 0;
+        }
+       header {
+                background-color: #8E44AD;
+                height: 77px;
+                width: 1440px;
+                display: flex;
+                /* justify-content: center; */
+                align-content: center;
+                
+                /* flex-direction: row; */
+                /* padding-left: 48px; */
+        }
+         footer {
+                background-color: #8E44AD;
+                height: 77px;
+                width: 1440px;
+                display: flex;
+                /* justify-content: center; */
+                align-content: center;
+                /* padding: 1000px 0px 0px 0px; */
+        }
+        .v1 {
+            display: flex;
+            flex-direction: row;
+             align-items: center;
+             padding-left: 48px;
+        }
+        .v3 {
+            margin-left: 10px;
+        }
+         .v4 {
+            padding: 70px 0px 0px 50px;
+        }
+        .v5 {
+            padding: 10px 0px 0px 0px;
+        }
+        .v6 {
+            padding: 200px 0px 0px 0px;
+        }
+         .v7 {
+            display: flex;
+            flex-direction: row;
+        }
+        .v8 {
+           padding-left: 48px;
+        }
+        .v9 {
+           padding-left: 80px;
+        }
+        .btn {
+            width: 116px;
+            height: 33px;
+        }
+      .v10 {
+           font-weight: bold;
+            font-size: 20px;
+        }
+        .form1 {
+             /* display: flex; */
+                /* justify-content: center; */
+                /* align-content: row; */
+
+               
+            /* flex-direction: column; */
+             /* align-items: center; */
+             /* background: red; */
+        }
+         #submit {
+        width: 58px;
+        height: 33px;
+        background-color: #3498db;
+        border-width: 0;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        margin-top: 21px;
+        cursor: pointer;
+}
+
+
+#p2 {
+        width: 58px;
+        height: 33px;
+        background-color: #3498db;
+        border-width: 0;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        margin-top: 21px;
+        cursor: pointer;
+}
+
+
+#korystyva4 {
+    opacity: 0;
+}
+#p88 {
+    opacity: 0;
+}
+#p66-1 {
+    opacity: 0;
+    display: flex;
+    flex-direction: row
+    
+}
+
+#p666 {
+   
+    padding-left: 48px;
+}
+#zm {
+   display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+  <header >
+    <div class="v1">
+        <div class="v2">  <h3>Users API</h3></div>
+        <div class="v3"><img    width="35" height="35" src="https://w7.pngwing.com/pngs/502/467/png-transparent-emoticon-smiley-wink-emoji-thug-life-miscellaneous-face-online-chat.png" alt=""></div>
+    </div>
+  </header>
+
+   
+    </div>
+
+    <div class="v4">
+         <div> <h3>Name</h3>
+
+                <div class="form1">
+                    <form class="v5" id="data">
+                    <input  type="number" placeholder="число 0-10" class="inp" >
+                    <input type="number" placeholder="число 0-10" class="inp">
+                    <!-- <div id="submit-wrapper"><input type="submit" onclick="myFunction()" id="submit" value="add" /> </div> -->
+                    
+                    </form>
+                </div>
+                    
+
+                <div class="v5">
+                    <button type="submit"  class = 'btn' id="p2" onclick="myFunction()"  ><p  > <div id="demo" class = 'v10'>Get</div> </p></button>
+                    
+                    <div id=todo-conrainer>
+                        <span class="korystyva4" id="korystyva4">Користувач</span>
+                    </div>
+
+                    <div class="v7">
+                    <h3 id="p3"></h3>                    
+                    <h3 class="v8" id="p6"></h3>
+                     </div>
+                      <div class="v7">
+                    <h3  id="p4"></h3>
+                    <h3 class="v8" id="p7"></h3>
+                     </div>
+                     <div class="v7"> 
+                    <h3 id="p5"></h3>                    
+                    <h3 class="v8" id="p8"></h3>                
+                     </div>                 
+                        <div class="v9">
+                        <!-- <button id="p88"><p></p></button> -->
+                        <!-- <div id="submit-wrapper"><input type="submit"  id="submit" value="Save" /> </div> -->
+                        <div id="p88"><input type="submit" id="submit" onclick="myFunction2()" value="Save" /> </div>
+                        </div>
+                </div>
+
+                <!-- <img src="./images/remove_icon.svg" alt=""> -->
+                <!-- <div id="m"><div>1</div><div>2</div></div> -->
+                <div id="mac"></div>
+                <div id="mac2"></div>
+
+
+                
+                <div id="p66-1"> 
+                <div id="p66"> </div>
+                <div id="p666"><img src="./images/remove_icon.svg" alt=""></div>
+                </div>
+
+                <!-- <div id="todo-container">
+                    <span id="list-title">List:</span>
+                    <div id="todo-list"></div>
+
+         </div> -->
+    </div>
+
+
+        <div class="v6">
+            <footer>
+                <div class="v1">  <h3>Users API</h3></div>
+          
+            </footer>
+        </div>
+      
+
+    <script src="./script.js"></script>
+</body>
+</html>
